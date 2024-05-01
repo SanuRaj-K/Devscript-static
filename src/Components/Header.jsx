@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import searchIcon from "../Assets/icons8-search-32.png";
 import menu from "../Assets/icons8-menu-32 (1).png";
 import Logo from "../Assets/logo.png";
 
 function Header() {
+  const [show, setShow] = useState(false);
   return (
-    <div className=" w-full ">
+    <div className=" w-full relative ">
       <div className=" md:text-center ">
         <div className=" bg-[#C2C2AF] xs:px-5 xs:text-[12px] md:h-[40px] md:text-[16px] flex justify-center items-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
@@ -25,7 +26,7 @@ function Header() {
             <img className="h-[20px]  w-[20px]" src={searchIcon} alt="" />
           </div>
           <div className="px-3">Cart</div>
-          <div>
+          <div onClick={() => setShow(!show)}>
             <img className="h-[20px] w-[20px]" src={menu} alt="" />
           </div>
         </div>
@@ -79,6 +80,22 @@ function Header() {
           </ul>
         </div>
       </nav>
+      {show ? (
+        <>
+          <ul className="  absolute bg-white pl-4 pr-2 right-0 content-center cursor-pointer">
+            <li className="mr-4">Skin Care</li>
+            <li className="mr-4">Body & Hand</li>
+            <li className="mr-4">Hair</li>
+            <li className="mr-4">Fragrance</li>
+            <li className="mr-4">Home</li>
+            <li className="mr-3">Kits & Travel</li>
+            <li className="mr-3">Gifts</li>
+            <li className="mr-3">Read</li>
+            <li className="mr-3">Stores</li>
+            <li className="">Facial Appointments</li>
+          </ul>
+        </>
+      ) : null}
     </div>
   );
 }
