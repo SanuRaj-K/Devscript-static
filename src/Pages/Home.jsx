@@ -14,14 +14,14 @@ function Home() {
           <div className=" hidden lg:block w-[20%]">
             <img src={Logo} alt="" />
           </div>
-          <div className="  sm:w-[50%] ">
+          <div className="  sm:w-[50%]  lg:pr-9 ">
             <div>Lorem, ipsum.</div>
             <div className=" text-[25px]">Lorem ipsum dolor sit.</div>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum,
               voluptatum.
             </p>
-            <div className=" flex justify-between border px-5 py-4 mt-5  rounded-sm md:border-white lg:border-black">
+            <div className=" flex justify-between hover:bg-black hover:text-white border px-5 py-4 mt-5  rounded-sm md:border-white lg:border-black">
               <button>Discover the Range</button>{" "}
               <div className="">&#8594;</div>
             </div>
