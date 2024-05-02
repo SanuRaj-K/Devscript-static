@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className=" bg-black text-white  w-full ">
+    <div className=" bg-black  pt-5 text-white  w-full ">
         
       <div className=" pt-5 px-4">
         <div className=" md:hidden">
