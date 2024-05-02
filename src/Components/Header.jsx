@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import searchIcon from "../Assets/icons8-search-32.png";
 import menu from "../Assets/icons8-menu-32 (1).png";
+import close from "../Assets/icons8-close-24.png";
 import Logo from "../Assets/logo.png";
 
 function Header() {
@@ -27,7 +28,11 @@ function Header() {
           </div>
           <div className="px-3">Cart</div>
           <div onClick={() => setShow(!show)}>
-            <img className="h-[20px] w-[20px]" src={menu} alt="" />
+            {!show ? (
+              <img className="h-[20px] w-[20px]" src={menu} alt="" />
+            ) : (
+              <img className="h-[20px] w-[20px]" src={close} alt="" />
+            )}
           </div>
         </div>
       </nav>
@@ -83,7 +88,7 @@ function Header() {
       {show ? (
         <>
           <ul className="  absolute bg-white pl-4 pr-2 right-0 content-center cursor-pointer">
-            <li className="mr-4">Skin Care</li>
+            <li className="mr-4 ">Skin Care</li>
             <li className="mr-4">Body & Hand</li>
             <li className="mr-4">Hair</li>
             <li className="mr-4">Fragrance</li>
