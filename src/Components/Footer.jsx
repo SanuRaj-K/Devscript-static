@@ -20,7 +20,7 @@ function Footer() {
         </div>
         <div >
           <input type="checkbox" name="chek" id="check" />
-          <label id="check" for="check">
+          <label id="check" htmlFor="check">
             Lorem ilabelsum dolor sit, amet consectetur adipisicing elit. Rerum
             et
             <u> suscipit magni.</u>
@@ -44,7 +44,7 @@ function Footer() {
         </div>
         <div >
           <input type="checkbox" name="chek" id="check" />
-          <label id="check" for="check">
+          <label id="check" htmlFor="check">
             Lorem ilabelsum dolor sit, amet consectetur adipisicing elit. Rerum
             et
             <u> suscipit magni.</u>

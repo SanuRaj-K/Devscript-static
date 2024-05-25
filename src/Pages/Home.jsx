@@ -3,8 +3,6 @@ import homeImg from "../Assets/Aesop_Exfoliating_Replenishing_Duo_HK_Web_Homepag
 import Logo from "../Assets/logo.png";
 import summer from "../Assets/Aesop_Homepage_Navigation_Category_Travel_Desktop_1700x2400px.jpg";
 import Secondary from "../Assets/Aesop_Gifting_2024_Web_Homepage_Secondary_Gift_Guide_GL_Mid_Desktop_2560x1440px.jpg";
-import bottle1 from "../Assets/Aesop_Body_Petitgrain_Reviving_Body_Gel_150mL_Web_Front_X-Large_3000x3456px.png";
-import bottle2 from "../Assets/Aesop_Body_Protective_Body_Lotion_SPF50_Asia_EU_150mL_Web_Front_X-Large_3000x3456px.png";
 function Home() {
   return (
     <div>
@@ -91,26 +89,6 @@ function Home() {
             </div>
           </div>
         </div>
-      
-      <div>
-        <div className=" flex justify-between text-center ">
-          <div>
-            <img className=" h-[300px] w-[300px]" src={bottle1} alt="bottle" />{" "}
-            <span>Lorem, ipsum dolor.</span>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div>
-            <img className=" h-[300px] w-[300px]" src={bottle2} alt="bottle" />{" "}
-            <span>Lorem, ipsum dolor.</span>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div>
-            <img className=" h-[300px] w-[300px]" src={bottle1} alt="bottle" />{" "}
-            <span>Lorem, ipsum dolor.</span>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   );
